@@ -1,0 +1,145 @@
+.Stats {
+  margin-top: -5px;
+  height: 505px;
+  background-color: #D22F56;
+  padding: 5px;
+
+  max-width: 450px;
+  min-width: 350px;
+  border: 1px solid black;
+  border-radius: 0 0 2% 2%;
+}
+
+.Stats .container {
+  background-color: #9d2f49;
+  height: 490px;
+  border: 2px solid #671f30;
+  border-radius: 2%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 5%);
+  grid-template-rows: repeat(auto-fill, 5%);
+}
+
+.Stats .stats-list {
+  grid-row: 2/20;
+  grid-column: 1/20;
+
+  width: 250px;
+  height: 185px;
+  background-color: #FEFCEA;
+  border-radius: 5px;
+  padding: 10px;
+
+  margin-left: 10px;
+  z-index: 1;
+}
+
+.Stats .stats-list-shadow {
+  grid-row: 2/20;
+  grid-column: 1/20;
+  background: radial-gradient(black 33%, transparent 33%);
+  border-radius: 10px;
+  background-size: 3px 3px;
+  width: 265px;
+  height: 200px;
+
+  margin-left: 10px;
+}
+
+.Stats .stats-list p{
+  display: flex;
+  justify-content: space-between;
+  line-height: 28px;
+}
+
+.Stats .stat-name {
+  font-size: .7em;
+  font-weight: bolder;
+}
+
+.Stats .stat-value {
+  font-size: .9em;
+}
+
+.Stats #sprite-front{
+  grid-row: 2/20;
+  grid-column: 15/20;
+  animation: shake 1.3s linear infinite;
+  margin-left: 15px;
+}
+
+.Stats #sprite-back{  
+  grid-row: 6/20;
+  grid-column: 15/20;
+  animation: shake 1.3s linear infinite;
+  margin-left: 15px;
+}
+
+.Stats .habilities-container{  
+  grid-row: 11/20;
+  grid-column: 1/20;
+  
+  width: 100%;
+  height: 125px;
+  background-color: #FEFCEA;
+
+  padding: 10px;
+  margin-left: 10px;
+  z-index: 1;
+}
+
+.Stats .habilities-container-shadow {
+  grid-row: 11/20;
+  grid-column: 1/20;
+  background: radial-gradient(black 33%, transparent 33%);
+  border-radius: 10px;
+  background-size: 3px 3px;
+  width: 102%;
+  height: 143px;
+
+  margin-left: 10px;
+}
+
+.Stats .habilities-container .habilities-title {  
+  font-weight: 900;
+}
+
+.Stats .habilities-container p {
+  font-weight: 900;
+  margin-top: 20px;
+  text-align: left;
+  font-size: .9em;
+  line-height: 35px;
+}
+
+.Stats .habilities-container p span {
+  font-size: .8em;
+}
+
+.Stats .shiny-sprites {
+  width: 100%;
+  grid-row: 17/20;
+  grid-column: 2/20;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Stats .shiny-sprites img{
+  width: 95px;
+  height: 95px;
+  animation: shake 3s linear infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}

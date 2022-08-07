@@ -1,0 +1,187 @@
+.Introduction {
+  margin: auto;
+}
+
+.Introduction .details-top {
+  display: flex;
+  margin-left: 20px;
+  height: 50px;
+  width: 200px;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+  background-color: #9F2642;
+  border-radius: 40% 40% 0 0;
+  padding: 12px 0 0 20px;
+}
+
+.Introduction .details-top .circle{
+  background-color: rgb(167, 241, 241);
+  border: 3px solid rgb(48, 48, 133);
+  border-radius: 100%;
+  width: 28px;
+  height: 28px;
+  margin-left: 10px;
+}
+
+.Introduction .super-container {
+  border: 1px solid black;
+  background-color: #D22F56;
+  padding: 5px 5px 10px 5px;
+
+  border-radius: 2% 2% 0 0;
+    
+  max-width: 450px;
+  min-width: 350px;
+}
+
+.Introduction .container {
+  padding: 5px 5px 15px 5px;
+  border: 1px solid #671f30;
+  background-color: #9d2f49;
+
+  background-image: url('./pokeball.svg');
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+}
+
+.Introduction .container .img-container{
+  margin-top: 10px;
+  width: 250px;
+  height: 270px;
+  border: 3px solid #5F3D3B;
+  border-radius: 0 0 20% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgb(254, 255, 234);
+
+  padding-top: 10px;
+}
+
+.Introduction .data-container{
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.Introduction .container .img-container img{
+  border: 3px solid rgb(208, 208, 208);
+  border-radius: 5% 5% 20% 5%;
+  width: 90%;
+  
+  background-size: 200% 200%;
+  animation: pokemon-background 15s linear infinite;
+}
+
+.Introduction .container .img-container .circle{
+  background-color: rgb(240, 65, 56);
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  margin-right: 75%;
+
+  animation: blink 1s ease-in infinite;
+}
+
+.Introduction .pokemon-info {
+  margin-top: 5px;
+  border: 1px white solid;
+  border-radius: 8px;
+  border: 2px solid #5F3D3B;
+  background-color: #FCF4EC;
+ 
+  font-weight: 900;
+  font-size: 1.4rem;
+  padding-top: 5px;
+  height: 35px;
+}
+
+.Introduction .types-container {
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 1.9rem;
+}
+
+.TYPES {
+  margin-top: 30px;
+  width: 120px;
+}
+
+.TYPES img{
+  height: 33px;
+  margin-bottom: 7px;
+}
+
+.DESCRIPTION {
+  padding: 8px 0 8px 8px;
+  height: 165px;
+  background: repeating-linear-gradient(
+    45deg,
+    #004572 0px,
+    #004572 3px,
+    #0068ac 3px,
+    #0068ac 6px
+  );
+  background-size: 400% 400%;
+  color: white;
+
+  border-radius: 10px 10px 0 0;
+  font-size: .8em;
+  font-weight: 100;
+
+  text-align:left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  line-height: 1rem;
+  animation: screenC 80s linear infinite;
+
+}
+
+.Introduction .screen-buttons {
+  background-color: #0068ac;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Introduction .screen-buttons button{
+  background: none;
+  width: 49%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  background-color: #004572;
+  border-radius: 5%;
+  color: white;
+}
+
+
+@keyframes blink {
+  100% {
+    background-color: rgb(70, 20, 17)
+  }
+}
+
+@keyframes screenC {
+  0% {
+    background-position:  0 50%;
+  }
+  50% {
+    background-position:  100% 50%;
+  }
+  100% {
+    background-position:  0 50%;
+  }
+}
+
+@keyframes pokemon-background {
+  0% {
+    background-position:  0 50%;
+  }
+
+  100% {
+    background-position:  100% 50%;
+  }
+}

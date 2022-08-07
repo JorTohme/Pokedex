@@ -1,0 +1,34 @@
+.Pokedex {
+  width: auto;
+  margin: auto;
+}
+
+.hinges-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -2px;
+
+  max-width: 450px;
+  min-width: 360px;
+}
+
+.hinges {
+  width: 40%;
+}
+
+#reload {
+  position: absolute;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  font-family: GB, sans-serif;
+  font-weight: 900;
+  background-color: rgb(138, 212, 244);
+}
+
+@media (min-width: 480px) {
+  .Pokedex {
+    width: 570px;
+    margin: auto;
+  }
+}
